@@ -1,0 +1,154 @@
+@charset "utf-8";
+
+.header {
+  background-color: hsla(310, 56%, 88%, 0.764);
+  color: rgb(240, 90, 230);
+}
+
+.title {
+  height: 310px;
+  background-image: url(../images/menu/24420683_l.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  text-shadow: 1px 1px 10px #4b2c14;
+}
+
+.title h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.title p {
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+.charge ,.ticket{
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.charge h2 {
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 30px;
+  padding-top: 30px;
+}
+
+.charge h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 5px;
+  background-color: #000000;
+  margin-top: 10px;
+  
+}
+
+
+.charge .item {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 25px 0;
+  
+}
+
+.charge .price {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.ticket h2 {
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 30px;
+  padding-top: 50px;
+}
+
+.ticket h2::after {
+  content: '';
+  display: block;
+  width: 95px;
+  height: 5px;
+  background-color: #000000;
+  margin-top: 10px;
+  
+}
+
+.ticket .item, .ticket .price {
+  font-size: 30px;
+  font-weight: bold;
+  padding-top: 20px;
+}
+
+.ticket .price {
+  padding-bottom: 10px;
+}
+
+.item-list {
+  max-width: 90%;
+  margin-top: 75px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 240px);
+  column-gap: 95px;
+  row-gap: 75px;
+  justify-content: center;
+}
+
+.item-list dl {
+  margin-top: 20px;
+}
+
+.item-list dt {
+  font-weight: bold;
+}
+
+.item-list dd {
+  font-size: 13px;
+  line-height: 20px;
+  margin-top: 10px;
+}
+
+.item-list .price {
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.item-list li {
+  position: relative;
+}
+
+.item-list .item-label {
+  position: absolute;
+  top: 0;
+  left: calc(100% + 18px);
+  font-size: 10px;
+  white-space: nowrap;
+  transform-origin: top left;
+  transform: rotate(90deg);
+}
+
+.footer {
+  margin-top: 100px;
+  background-color: hsla(310, 56%, 88%, 0.764);
+  color: rgb(240, 90, 230);
+}
+
+@media (max-width: 800px) {
+  .item-list {
+    margin-top: 45px;
+    row-gap: 40px;
+  }
+}
